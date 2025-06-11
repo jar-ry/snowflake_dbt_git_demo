@@ -1,4 +1,5 @@
 {# A basic example for a project-wide macro to cast a column uniformly #}
+{# Adding a change #}
 
 {% macro cents_to_dollars(column_name) -%}
     {{ return(adapter.dispatch('cents_to_dollars')(column_name)) }}
